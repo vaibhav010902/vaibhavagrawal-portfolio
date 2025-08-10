@@ -23,7 +23,7 @@ function Contact() {
                             
                         </div>
                     </div>
-                    <div className={styles.contact_page_right_container}>
+                    {/* <div className={styles.contact_page_right_container}>
                         <div className={styles.contact_form_container}>
                             <h2>Get in Touch</h2>
                             <div className={styles.contact_form}>
@@ -50,7 +50,7 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>
