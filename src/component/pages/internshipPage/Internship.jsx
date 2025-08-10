@@ -9,9 +9,11 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { Outlet } from 'react-router-dom';
 import Footer from '../../footer/Footer';
-function Internship() {
+import gsap from 'gsap';
+import { useRef } from 'react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
-    const API_URL = "http://127.0.0.1:5000/api/project"
+function Internship() {
 
     const internships = [
         {
@@ -47,13 +49,47 @@ function Internship() {
 
     const [activeCardId, setActiveCardId] = useState(null);
 
+    const internshipContainerHeaderRef = useRef(null);
+    const internshipContentRef = useRef(null);
 
+    gsap.registerPlugin(ScrollTrigger);
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            const tl = gsap.timeline();
+            tl.fromTo(
+                internshipContainerHeaderRef.current.querySelector('h2'),
+                { opacity: 0, y: 50, duration: 1 },
+                { opacity: 1, y: 0, duration: 1, delay: 2 }
+            )
+            tl.fromTo(
+                internshipContainerHeaderRef.current.querySelectorAll('p'),
+                { opacity: 0, y: 50, duration: 0.5 },
+                { opacity: 1, y: 0, duration: 1, stagger: 0.5 }
+            )
+            gsap.from(
+                internshipContentRef.current,
+                {
+                    scrollTrigger: {
+                        trigger: internshipContentRef.current,
+                        start: 'top 80%',
+                        toggleActions: 'play none none reverse',
+                    },
+                    opacity: 0,
+                    y: 60,
+                    duration: 1,
+                    ease: 'power2.out',
+                    stagger: 0.2,
+                }
+            );
+        });
+        return () => ctx.revert();
+    }, [])
 
     return (
         <>
             <div className={styles.internship_page}>
                 <div className={styles.internship_page_container}>
-                    <div className={styles.internship_page_container_header}>
+                    <div className={styles.internship_page_container_header} ref={internshipContainerHeaderRef}>
                         <h2 style={{ fontSize: "100px" }}>Internship</h2>
                         <div>
                             <p>
@@ -73,7 +109,7 @@ function Internship() {
                             </p>
                         </div>
                     </div>
-                    <div className={styles.internship_page_container_card}>
+                    <div className={styles.internship_page_container_card} ref={internshipContentRef}>
                         {internships.map(internship => (
                             <div className={styles.internship_page_container_card_details} key={internship.id}>
                                 <div className={styles.internship_page_container_card_img}>

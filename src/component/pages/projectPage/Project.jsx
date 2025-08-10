@@ -72,7 +72,7 @@ function Project() {
         dashboard: "https://app.powerbi.com/view?r=eyJrIjoiYzlmNzUyYzgtMjgzMC00OGM1LWJjZDctZmRhNjg0ODQ5YWZmIiwidCI6IjkwNWEwNDc2LTkyZWEtNDg1ZC1hNThjLTQ5M2I1MDU2NDRjNCJ9",
         thumbnail: "/thumbnail/seasonanalsisofiplandplayers.png"
     }
-]
+    ]
 
 
     const projectContainerHeaderRef = useRef(null);
@@ -111,8 +111,6 @@ function Project() {
         });
         return () => ctx.revert();
     }, [])
-
-
 
 
     return (
