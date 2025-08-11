@@ -28,6 +28,11 @@ function Navbar() {
 
   const sidebarRef = useRef(null)
   const [openSidebar, setOpenSidebar] = useState(false)
+  const [activeButton, setActiveButton] = useState(null);
+
+   const handleButtonClick = (id) => {
+    setActiveButton(id); // Set the clicked button as active
+  };
   return (
     <>
       <nav className={styles.navbar}>
@@ -35,12 +40,58 @@ function Navbar() {
           <span>Vaibhav Agrawal</span>
         </div>
         <div className={styles.navbar_btns_container}>
-          <Link to="/" id='navbar-about-me' className={styles.navbar_btn}>About me</Link>
-          <Link to="https://drive.google.com/file/d/1HmjOutEDnG0ezF0pe9ZBojQdEdbGTPNc/view?usp=sharing" target="_blank" id='navbar-resume' className={styles.navbar_btn}>Resume</Link>
-          <Link to="/project" id='navbar-projects' className={styles.navbar_btn} onClick={() => (handleclick(e))}>Projects</Link>
-          <Link to="/internship" id='navbar-internship' className={styles.navbar_btn}>Internship</Link>
-          <Link to="/contact" id='navbar-contact' className={styles.navbar_btn}>Contact</Link>
-          <button id='navbar-contact' className={styles.menu_navbar_btn} onClick={() => setOpenSidebar((prev) => !prev)}>Menu</button>
+          <Link
+            to="/"
+            id="navbar-about-me"
+            className={`${styles.navbar_btn} ${
+              activeButton === 'navbar-about-me' ? styles.active : ''
+            }`}
+            onClick={() => handleButtonClick('navbar-about-me')}
+          >
+            About me
+          </Link>
+          <Link
+            to="https://drive.google.com/file/d/1HmjOutEDnG0ezF0pe9ZBojQdEdbGTPNc/view?usp=sharing"
+            target="_blank"
+            id="navbar-resume"
+            className={`${styles.navbar_btn} ${
+              activeButton === 'navbar-resume' ? styles.active : ''
+            }`}
+            onClick={() => handleButtonClick('navbar-resume')}
+          >
+            Resume
+          </Link>
+          <Link
+            to="/project"
+            id="navbar-projects"
+            className={`${styles.navbar_btn} ${
+              activeButton === 'navbar-projects' ? styles.active : ''
+            }`}
+            onClick={() => handleButtonClick('navbar-projects')}
+          >
+            Projects
+          </Link>
+          <Link
+            to="/internship"
+            id="navbar-internship"
+            className={`${styles.navbar_btn} ${
+              activeButton === 'navbar-internship' ? styles.active : ''
+            }`}
+            onClick={() => handleButtonClick('navbar-internship')}
+          >
+            Internship
+          </Link>
+          <Link
+            to="/contact"
+            id="navbar-contact"
+            className={`${styles.navbar_btn} ${
+              activeButton === 'navbar-contact' ? styles.active : ''
+            }`}
+            onClick={() => handleButtonClick('navbar-contact')}
+          >
+            Contact
+          </Link>
+          <button id='navbar-contact' className={styles.menu_navbar_btn} onClick={() => setOpenSidebar((prev) => !prev)}>{openSidebar?"Close":"Menu"}</button>
         </div>
       </nav>
       <nav className={styles.sidebar} ref={sidebarRef} style={{ display: openSidebar ? 'flex' : 'none' }}>

@@ -40,6 +40,10 @@
     display: none;
     background-color: white;
 }
+.navbar_btn.active {
+  background-color: black;
+  color: white;
+}
 .navbar_btn:hover, .menu_navbar_btn:hover{
     color: white;
     transition: color 0.5 ease-in;
