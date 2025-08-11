@@ -51,7 +51,7 @@ function Navbar() {
             About me
           </Link>
           <Link
-            to="https://drive.google.com/file/d/1HmjOutEDnG0ezF0pe9ZBojQdEdbGTPNc/view?usp=sharing"
+            to="https://drive.google.com/file/d/1hbkNSxLlVWCHJVHpFlAe7IdzLhI7s_8P/view?usp=sharing"
             target="_blank"
             id="navbar-resume"
             className={`${styles.navbar_btn} ${
@@ -107,7 +107,7 @@ function Navbar() {
               About me
           </Link>
           <Link 
-            to="https://drive.google.com/file/d/1HmjOutEDnG0ezF0pe9ZBojQdEdbGTPNc/view?usp=sharing" target="_blank" 
+            to="https://drive.google.com/file/d/1hbkNSxLlVWCHJVHpFlAe7IdzLhI7s_8P/view?usp=sharing" target="_blank" 
             id='navbar-resume' 
             className={styles.sidebar_btn} 
             onClick={() => 
