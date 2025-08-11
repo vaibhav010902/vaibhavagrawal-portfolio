@@ -6,15 +6,18 @@ function Footer() {
     const connect = [
         {
             name: "mail",
-            icon: "./connecticon/email.png"
+            icon: "./connecticon/email.png",
+            link: "mailto:vaibhavagrawal1902@gmail.com"
         },
         {
             name: "linkedin",
-            icon: "./connecticon/linkedin.png"
+            icon: "./connecticon/linkedin.png",
+            link: "https://www.linkedin.com/in/vaibhavagrawal1902"
         },
         {
             name: "github",
-            icon: "./connecticon/github.png"
+            icon: "./connecticon/github.png",
+            link: "https://github.com/vaibhav010902"
         }
     ]
     return (
@@ -26,7 +29,7 @@ function Footer() {
                 <div className={styles.connection_container_content}>
                     {connect.map(item => (
                         <div className={styles.connection_container_content_icon}>
-                            <img src={item.icon} id={item.name} />
+                            <a href={item.link} target='_blank'><img src={item.icon} id={item.name} /></a>
                         </div>
                     ))}
                 </div>

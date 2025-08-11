@@ -20,7 +20,10 @@
   justify-content: center;
   gap: 100px;
 }
-.connection_container_content img{
+.connection_container_content a{
+  text-decoration: none;
+}
+.connection_container_content a img{
   width: 50px;
   height: 50px;
   object-fit: cover;
@@ -54,7 +57,7 @@
 .connection_container_content{
   gap: 60px;
 }
-  .connection_container_content img{
+  .connection_container_content a img{
     width: 40px;
     height: 40px;
   }
