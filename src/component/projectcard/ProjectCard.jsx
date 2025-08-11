@@ -43,7 +43,7 @@ function ProjectCard({ project}) {
                         <div className={styles.project_link_container}>
                             <h4><FaLink />Links:</h4>
                             <div className={styles.links}>
-                                <a href={project.github}><FaExternalLinkAlt />Github</a>
+                                <a href={project.github} target='_black'><FaExternalLinkAlt />Github</a>
                                 {project.dashboard ? (<a href={project.dashboard} target='_blank'><FaExternalLinkAlt />Live Dashboard</a>) : (<div></div>)}
                             </div>
                         </div>

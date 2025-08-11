@@ -28,7 +28,7 @@ function Internship() {
             responsibility: "Designed and developed a Power BI dashboard to analyze 5,000+ sales transactions, enabling data-driven decision-making. Streamlined data workflows and performed data preprocessing, improving analysis efficiency by 25%. Built a course inquiry chatbot using Python and Scikit-learn, automating 80% of customer support queries. Collaborated with product, tech, and analytics teams to align technical deliverables with business goals.",
             achievement_and_impact: "Increased revenue by 15% by delivering actionable insights through the Power BI dashboard. Reduced manual support workload by 30% using an AI-powered chatbot. The chatbot reduced manual workload and increased customer service efficiency.",
             tech: ["Python", "Numpy", "Pandas", "HTML", "CSS", "JavaScript", "Flask", "Scikit-learn"],
-            certification: "https://github.com/vaibhav010902/Ed-Tech-Chatbot",
+            certification: "https://drive.google.com/file/d/1hQcubcgTCOnOFcqLcw6CGCEttpmaS1Ts/view?usp=sharing",
         },
         {
             id: 2,
@@ -38,11 +38,11 @@ function Internship() {
             location: "Bangalore, Karnataka",
             workmode: "Remote",
             duration: "June 2024 - July 2024",
-            short_description: "As a Data Science/AI/ML Intern at iLearnings, I worked on analytics and automation projects aimed at optimizing operations for EdTech clients. I built a data dashboard, developed an AI-powered chatbot, and collaborated cross-functionally to drive results.",
-            responsibility: "Designed and developed a Power BI dashboard to analyze 5,000+ sales transactions, enabling data-driven decision-making. Streamlined data workflows and performed data preprocessing, improving analysis efficiency by 25%. Built a course inquiry chatbot using Python and Scikit-learn, automating 80% of customer support queries. Collaborated with product, tech, and analytics teams to align technical deliverables with business goals.",
-            achievement_and_impact: "Increased revenue by 15% by delivering actionable insights through the Power BI dashboard. Reduced manual support workload by 30% using an AI-powered chatbot. The chatbot reduced manual workload and increased customer service efficiency.",
+            short_description: "This internship focused on applying AI concepts and cloud computing tools in real-world projects, including time-series forecasting and workflow automation for data processing.",
+            responsibility: "Explored AI and cloud technologies, gaining hands-on experience with IBM Cloud and foundational AI models. Conducted time-series forecasting using Python to predict trends, improving analysis accuracy by 15%. Built and tested workflows for real-world data processing, focusing on data cleaning, model deployment, and improving project delivery timelines by 10%. Collaborated with peers on AI-driven projects, enhancing technical knowledge and teamwork skills.",
+            achievement_and_impact: "Increased forecasting accuracy by 15% through optimized Python models. Reduced project delivery timelines by 10% by streamlining data workflows. Improved cross-team collaboration in AI-driven project execution.",
             tech: ["Python", "Numpy", "Pandas", "Matplotlib", "Machine Learning", "Scikit-learn", "IBM cloud", "Data Cleaning", "Data Analysis"],
-            certification: "https://github.com/vaibhav010902/Ed-Tech-Chatbot",
+            certification: "https://drive.google.com/file/d/1POR9J0dQ9YLRczckdh8lcLsyLT-rxQXv/view?usp=sharing",
         },
 
     ]
@@ -90,7 +90,7 @@ function Internship() {
             <div className={styles.internship_page}>
                 <div className={styles.internship_page_container}>
                     <div className={styles.internship_page_container_header} ref={internshipContainerHeaderRef}>
-                        <h2 style={{ fontSize: "100px" }}>Internship</h2>
+                        <h2 className={styles.internship_page_container_header_h2}>Internship</h2>
                         <div>
                             <p>
                                 Internships have played a crucial role in bridging the gap between classroom learning and practical industry exposure.

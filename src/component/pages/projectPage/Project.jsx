@@ -24,6 +24,15 @@ function Project() {
 
     const projects = [
     {
+        id: 6,
+        type: "web",
+        title: "Express.js Pinterest-like Web App",
+        description: "Built a Pinterest-like web application using Node.js, Express.js, MongoDB, and EJS, featuring user authentication, dynamic feeds, and image upload functionality with Multer. Designed responsive and reusable UI components, including a navigation bar, sidebar, and notification panels, using EJS templating, CSS, and JavaScript for dynamic behaviour. Implemented secure user registration and login with Passport.js, session management, and MongoDB integration for storing user profiles, posts, and uploaded images. Developed RESTful routes with modular Express.js structure, robust error handling, and efficient data retrieval using Mongoose population for a seamless user experience. ",
+        tech: ["HTML","CSS","JavaScript","Express","MongoDB","Multer","Passport"],
+        github: "https://github.com/vaibhav010902/Express.js-Pinterest-like-Web-App.git",
+        thumbnail: "/thumbnail/pinterest.png"
+    },
+    {
         id: 1,
         type: "web",
         title: "Chatbot for Course Inquiry And Support",
@@ -121,7 +130,7 @@ function Project() {
                         className={styles.project_container_header}
                         ref={projectContainerHeaderRef}
                     >
-                        <h2 style={{ fontSize: "100px" }}>Projects</h2>
+                        <h2>Projects</h2>
                         <div>
                             <p>
                                 Here’s a curated collection of my most impactful projects that showcase my passion for data, design, and development.

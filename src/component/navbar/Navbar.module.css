@@ -23,7 +23,7 @@
     gap: 30px;
     width: max-content;
 }
-.navbar_btn{
+.navbar_btn, .menu_navbar_btn{
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
@@ -36,12 +36,16 @@
     overflow: hidden;
     z-index: 1;
 }
-.navbar_btn:hover{
+.menu_navbar_btn{
+    display: none;
+    background-color: white;
+}
+.navbar_btn:hover, .menu_navbar_btn:hover{
     color: white;
     transition: color 0.5 ease-in;
     z-index: 1;  
 }
-.navbar_btn::before{
+.navbar_btn::before, .menu_navbar_btn::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -53,10 +57,77 @@
     z-index: -1;
     transition: all 0.5s ease-in;
 }
-.navbar_btn:hover::before{
+.navbar_btn:hover::before, .menu_navbar_btn:hover::before{
     bottom: 0;
     border-radius: 0;
     z-index: -1;
     /* transition: 0.5s ease-in; */
     
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    z-index: 99;
+    backdrop-filter: blur(6px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 20px rgb(0,0,0,0.1);
+}
+.sidebar_navbtns_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.sidebar_btn{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 15px 10px;
+    /* border: 1px solid black; */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: 500ms ease-in-out;
+}
+.sidebar_btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -150%;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 15px 10px;
+    /* border: 1px solid black; */
+
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: 500ms ease-in-out;
+    z-index: -1;
+}
+.sidebar_btn:hover{
+    color: white;
+    transition: 500ms ease-in-out;
+}
+.sidebar_btn:hover::before{
+    bottom: 0%;
+    transition: 500ms ease-in-out;
+}
+
+@media (max-width: 960px){
+    .navbar_btn{
+        display: none;
+    }
+    .menu_navbar_btn{
+        display: block;
+    }
 }

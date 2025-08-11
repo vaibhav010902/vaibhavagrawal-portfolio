@@ -16,7 +16,9 @@
     flex-direction: column;
     gap: 40px;
 }
-
+.internship_page_container_header h2{
+    font-size: 100px;
+}
 .internship_page_container_header div{
     display: flex;
     flex-direction: column;
@@ -245,4 +247,41 @@
 .links a:hover::before{
     width: 100%;
     transition: 300ms;
+}
+
+
+@media (max-width: 1025px){
+    .internship_page_container{
+        padding: 70px 60px 100px 60px;
+    }
+}
+@media (max-width: 920px){
+    
+    .internship_page_container_card_img img{
+        height: 80px;
+    }
+}
+@media (max-width: 769px){
+    .internship_page_container_header h2{
+        font-size: 80px;
+    }
+    .internship_page_container_card{
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+    .internship_page_container_card_details{
+        width: 100%;
+    }
+    .internship_page_container_card_img img{
+        height: 100px;
+    }
+}
+@media (max-width: 600px){
+    .internship_page_container_header h2{
+        font-size: 50px;
+    }
+    .internship_page_container{
+        padding: 70px 0px 100px 0px;
+    }
 }

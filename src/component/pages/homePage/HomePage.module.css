@@ -1,32 +1,37 @@
-.homepage{
+.homepage {
   position: relative;
   top: 50px;
 }
-.homepage_container_1{
+
+.homepage_container_1 {
   width: 100%;
   height: 95vh;
   display: flex;
   flex-direction: row;
   padding: 0 30px;
 }
-.left_container{
+
+.left_container {
   position: relative;
   width: 30%;
   border-bottom: 1px solid black;
 }
-.left_container span{
+
+.left_container span {
   position: absolute;
   bottom: 6vh;
   left: 0;
   font-weight: 600;
   width: 60%;
 }
-.right_container{
+
+.right_container {
   position: relative;
   width: 70%;
   border-bottom: 1px solid black;
 }
-.right_container span{
+
+.right_container span {
   position: absolute;
   bottom: 6vh;
   right: 0;
@@ -38,45 +43,50 @@
 
 
 /* CONTAINER 2 */
-.homepage_container_2{
+.homepage_container_2 {
   width: 100%;
   padding: 0 30px;
 }
-.about_me_container{
+
+.about_me_container {
   display: flex;
   flex-direction: column;
   gap: 150px;
   padding: 100px 100px;
   border-bottom: 1px solid black;
 }
-.about_me_content_header{
+
+.about_me_content_header {
   width: max-content;
-  border-bottom:2px solid black;
+  border-bottom: 2px solid black;
   /* font-weight: 600; */
 }
 
 /* CONTAINER 2: INTRODUCTION */
-.about_me_container_introduction{
+.about_me_container_introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
 }
-.about_me_content_container{
+
+.about_me_content_container {
   display: flex;
   flex-direction: row;
   width: 100%;
   gap: 20px;
   /* align-items: center; */
 }
-.about_me_content_content{
+
+.about_me_content_content {
   display: flex;
   flex-direction: column;
   width: 60%;
   gap: 20px;
 }
-.about_me_content_content{
+
+.about_me_content_content {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -84,51 +94,57 @@
 }
 
 /* CONTAINER 2: EDUCATION */
-.about_me_education_container{
+.about_me_education_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
 }
-.about_me_education_container_content{
+
+.about_me_education_container_content {
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
   gap: 40px;
 }
-.education_detail_container{
+
+.education_detail_container {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-.education_img img{
+
+.education_img img {
   width: 80px;
   height: 80px;
   object-fit: cover;
 }
 
 /* CONTAINER 2: SKILLS */
-.about_me_skills_container{
+.about_me_skills_container {
   display: flex;
   flex-direction: column;
   gap: 50px;
   align-items: center;
 }
-.about_me_skills_container_content{
+
+.about_me_skills_container_content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 50px 100px ;
+  gap: 50px 100px;
 }
-.skills_language_container{
+
+.skills_language_container {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.skills_language_container_content{
+
+.skills_language_container_content {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -136,21 +152,25 @@
   /* justify-content: space-between; */
   gap: 50px;
 }
-.about_me_skills_language{
+
+.about_me_skills_language {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about_me_skills_img img{
+
+.about_me_skills_img img {
   width: 70px;
   height: 70px;
   object-fit: cover;
 }
+
 .about_me_skills_img img:hover {
   cursor: pointer;
   filter: drop-shadow(0 0 2em #00c8ffec);
 }
-.about_me_skills_name span{
+
+.about_me_skills_name span {
   font-size: 12px;
   font-weight: 600;
 }
@@ -158,51 +178,156 @@
 
 
 /* CONTAINER 3 */
-.homepage_container_3{
+.homepage_container_3 {
   width: 100%;
   padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
-.services_container{
+
+.services_container {
   display: flex;
   flex-direction: column;
   gap: 80px;
   padding: 100px 100px;
   border-bottom: 1px solid black;
   text-align: center;
+  width: 100%;
 }
-.services_container_content{
+
+.services_container_content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 50px 100px;
   flex-wrap: wrap;
-  
+  width: 100%;
+
 }
-.services_container_content_container{
+
+.services_container_content_container {
   display: flex;
   flex-direction: row;
   min-width: 300px;
   width: 300px;
   gap: 10px;
 }
-.services_container_content_container_img img{
+
+.services_container_content_container_img img {
   width: 80px;
   height: 80px;
   object-fit: cover;
 }
-.services_container_content_container_detailes{
+
+.services_container_content_container_detailes {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.services_container_content_container_service_name h2{
+
+.services_container_content_container_service_name h2 {
   font-size: 16px;
   text-align: start;
 }
-.services_container_content_container_description p{
+
+.services_container_content_container_description p {
   font-size: 12px;
   font-weight: 600;
   text-align: start;
 }
 
 
+@media (max-width: 1360px) {
+  .services_container_content {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .services_container_content {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 910px) {
+  .right_container span{
+    font-size: 100px;
+  }
+  .left_container span{
+    font-size: 14px;
+  }
+  .about_me_content_container {
+    flex-direction: column-reverse;
+  }
+  .about_me_content_content{
+    width: 100%;
+  }
+  .about_me_education_container_content{
+    flex-direction: column;
+  }
+  .services_container {
+    padding: 100px 20px;
+  }
+
+  .services_container_content {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .services_container {
+    padding: 100px 70px;
+  }
+
+  .services_container_content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px){
+    .homepage_container_1{
+    flex-direction: column-reverse;
+    /* align-items: center;
+    justify-content: center; */
+    height: 100vh;
+    /* gap: 30px; */
+    justify-content: space-around;
+  }
+  .right_container{
+    width: 100%;
+    border: none;
+    padding-top: 30px;
+  }
+  .right_container span{
+    position: relative;
+    font-size: 110px;
+  }
+  .left_container{
+    width: 60%;
+    border: none;
+  }
+  .left_container span{
+    position: relative;
+  }
+  .about_me_container {
+    padding: 100px 30px;
+  }
+}
+@media (max-width: 560px){
+  .right_container span{
+    font-size: 80px;
+  }
+  .left_container span{
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px){
+  .skills_language_container_content {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
