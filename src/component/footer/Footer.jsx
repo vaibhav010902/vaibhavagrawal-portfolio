@@ -21,7 +21,7 @@ function Footer() {
         <div className={styles.homepage_container_4}>
             <div className={styles.connection_container}>
                 <div className={styles.connection_container_header}>
-                    <h2 style={{ fontSize: "60px" }}>Let's Connect</h2>
+                    <h2>Let's Connect</h2>
                 </div>
                 <div className={styles.connection_container_content}>
                     {connect.map(item => (

@@ -330,4 +330,10 @@
     align-items: center;
     justify-content: center;
   }
+  .about_me_container{
+    padding: 100px 0;
+  }
+  .services_container{
+    padding: 100px 0;
+  }
 }

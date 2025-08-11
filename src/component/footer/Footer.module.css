@@ -10,6 +10,9 @@
   border-bottom: 1px solid black;
   text-align: center;
 }
+.connection_container_header h2{
+  font-size: 60px;
+}
 .connection_container_content{
   display: flex;
   flex-direction: row;
@@ -40,4 +43,19 @@
 .connection_container_content_icon:hover::after{
   width: 100%;
   transition: 500ms;
+}
+@media (max-width: 600px){
+  .connection_container{
+    padding: 100px 0px;
+  }
+  .connection_container_header h2{
+    font-size: 40px;
+}
+.connection_container_content{
+  gap: 60px;
+}
+  .connection_container_content img{
+    width: 40px;
+    height: 40px;
+  }
 }
