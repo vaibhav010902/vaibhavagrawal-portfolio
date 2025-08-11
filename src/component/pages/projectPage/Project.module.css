@@ -55,4 +55,9 @@
         padding: 70px 30px 100px 30px;
     }
 }
+@media (max-width: 500px){
+    .project_container{
+        padding: 70px 0px 100px 0px;
+    }
+}
 
