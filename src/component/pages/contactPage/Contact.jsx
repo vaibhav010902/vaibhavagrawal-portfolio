@@ -17,7 +17,7 @@ function Contact() {
                         <p>Feel free to reach out to me via email or connect with me on social media.</p>
                         <div className={styles.contact_page_left_container_socials}>
                             <a href="mailto:vaibhavagrawal1902@gmail.com"><img src="https://cdn-icons-png.flaticon.com/128/15047/15047587.png" alt="" />Email</a>
-                            <a href="www.linkedin.com/in/vaibhavagrawal1902" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" />LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/vaibhavagrawal1902" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" />LinkedIn</a>
                             <a href="https://github.com/vaibhav010902" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/4926/4926624.png" alt="" />GitHub</a>
                             <a href="https://twitter.com/VaibhavAgr57014" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/25/25660.png" alt="" />Twitter</a>
                             
