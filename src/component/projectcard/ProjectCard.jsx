@@ -45,6 +45,7 @@ function ProjectCard({ project}) {
                             <div className={styles.links}>
                                 <a href={project.github} target='_black'><FaExternalLinkAlt />Github</a>
                                 {project.dashboard ? (<a href={project.dashboard} target='_blank'><FaExternalLinkAlt />Live Dashboard</a>) : (<div></div>)}
+                                {project.live ? (<a href={project.live} target='_blank'><FaExternalLinkAlt />Live</a>) : (<div></div>)}
                             </div>
                         </div>
                     </div>

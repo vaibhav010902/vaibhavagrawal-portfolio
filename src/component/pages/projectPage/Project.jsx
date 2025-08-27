@@ -33,6 +33,16 @@ function Project() {
         thumbnail: "/thumbnail/pinterest.png"
     },
     {
+        id: 7,
+        type: "web",
+        title: "TextVison",
+        description: "Built an AI-based image generation tool with credit system and Razorpay integration using secure back-end APIs. Tested payment and credit deduction logic 15+ times for implementation reliability. Used JWT auth and MongoDB for robust, scalable development with smooth communication across 3 services ",
+        tech: ["HTML","CSS","JavaScript","Express","MongoDB", "CLIPDROP API"],
+        github: "https://github.com/vaibhav010902/Textvision.git",
+        thumbnail: "/thumbnail/pinterest.png",
+        live: "https://textvision.netlify.app/"
+    },
+    {
         id: 1,
         type: "web",
         title: "Chatbot for Course Inquiry And Support",
