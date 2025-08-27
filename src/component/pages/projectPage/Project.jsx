@@ -39,7 +39,7 @@ function Project() {
         description: "Built an AI-based image generation tool with credit system and Razorpay integration using secure back-end APIs. Tested payment and credit deduction logic 15+ times for implementation reliability. Used JWT auth and MongoDB for robust, scalable development with smooth communication across 3 services ",
         tech: ["HTML","CSS","JavaScript","Express","MongoDB", "CLIPDROP API"],
         github: "https://github.com/vaibhav010902/Textvision.git",
-        thumbnail: "/thumbnail/pinterest.png",
+        thumbnail: "/thumbnail/textvison.png",
         live: "https://textvision.netlify.app/"
     },
     {
