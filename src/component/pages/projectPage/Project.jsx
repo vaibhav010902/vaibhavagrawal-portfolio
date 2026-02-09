@@ -24,6 +24,15 @@ function Project() {
 
     const projects = [
     {
+        id: 8,
+        type: "web",
+        title: "FriendCircle",
+        description: "Developed a full-stack, real-time chat application using React, Redux Toolkit for state management, and React Router for client-side routing, resulting in a dynamic and responsive user interface. Integrated Appwrite as a Backend-as-a-Service (BaaS) for handling user authentication, real-time messaging database, and cloud storage for media files and user profiles. Implemented key features including one-on-one messaging, media sharing (images and voice notes), and user profile management, demonstrating proficiency in building complex, feature-rich applications. Utilized modern frontend development tools and practices, including Vite for an optimized build process, React Hook Form for efficient form handling, and CSS Modules for scoped styling. ",
+        tech: ["HTML","CSS","JavaScript","React","React-Router","React-Redux","Appwrite"],
+        github: "https://github.com/vaibhav010902/Chatting-App.git",
+        thumbnail: "/thumbnail/friendcircle.png"
+    },
+    {
         id: 6,
         type: "web",
         title: "Express.js Pinterest-like Web App",
