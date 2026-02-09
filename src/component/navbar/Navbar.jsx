@@ -51,7 +51,7 @@ function Navbar() {
             About me
           </Link>
           <Link
-            to="https://drive.google.com/file/d/1hbkNSxLlVWCHJVHpFlAe7IdzLhI7s_8P/view?usp=sharing"
+            to="https://drive.google.com/file/d/138Yqxdk-C-exTbgOCVg9Ovtaqt9eGJG-/view?usp=drive_link"
             target="_blank"
             id="navbar-resume"
             className={`${styles.navbar_btn} ${
