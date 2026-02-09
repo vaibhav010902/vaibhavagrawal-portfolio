@@ -101,6 +101,7 @@ function Project() {
         thumbnail: "/thumbnail/seasonanalsisofiplandplayers.png"
     }
     ]
+    // https://app.powerbi.com/view?r=eyJrIjoiY2M2ZTYwYmMtZDdiNC00ZDU4LWJlYjEtNzc4YmVlMmRhZGY5IiwidCI6IjkwNWEwNDc2LTkyZWEtNDg1ZC1hNThjLTQ5M2I1MDU2NDRjNCJ9
 
 
     const projectContainerHeaderRef = useRef(null);
