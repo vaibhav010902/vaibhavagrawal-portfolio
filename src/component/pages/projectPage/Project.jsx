@@ -31,7 +31,7 @@ function Project() {
         tech: ["HTML","CSS","JavaScript","React","React-Router","React-Redux","Appwrite"],
         github: "https://github.com/vaibhav010902/Chatting-App.git",
         thumbnail: "/thumbnail/friendcircle.png",
-        live: "https://friends-circle.netlify.com/"
+        live: "https://friends-circle.netlify.app/"
     },
     {
         id: 6,
