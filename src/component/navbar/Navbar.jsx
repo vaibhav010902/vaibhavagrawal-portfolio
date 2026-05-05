@@ -79,7 +79,7 @@ function Navbar() {
             }`}
             onClick={() => handleButtonClick('navbar-internship')}
           >
-            Internship
+            Experience
           </Link>
           <Link
             to="/contact"

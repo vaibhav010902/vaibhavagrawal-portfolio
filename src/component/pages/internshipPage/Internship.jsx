@@ -18,9 +18,25 @@ function Internship() {
     const internships = [
         {
             id: 1,
+            thumbnail: "/thumbnail/nexustech.png",
+            companyname: "Nexus Tech Innovation",
+            position: "Embedded AI Engineer",
+            type: "Full-time",
+            location: "Bangalore, Karnataka",
+            workmode: "Hybrid",
+            duration: "Feb 2026 - Present",
+            short_description: "As a Embedded AI Engineer at Nexus Tech Innovation, I worked on frontend of MRI Automation projects for healthcare clients. I also worked on developing AI-powered solution for invoice processing.",
+            responsibility: "Developed an end-to-end invoice processing pipeline using OpenCV, RapidOCR, and LLM (Ollama/Gemma), reducing manual data entry effort by 60–70%. Implemented advanced image preprocessing techniques (noise reduction, contrast enhancement) to improve OCR accuracy by 30%+. Built a structured data extraction engine that converts unstructured OCR output into JSON format, achieving 95%+ data consistency. Designed and implemented table extraction logic using positional analysis (bounding boxes, column mapping), enabling accurate parsing of invoice line items. Integrated LLM (Gemma via Ollama API) for intelligent invoice parsing, improving contextual data extraction accuracy by 40%. Developed and deployed Flask-based REST APIs for invoice extraction, processing, and management, handling multiple concurrent requests efficiently. Designed a database schema using SQLAlchemy (SQLite) to store structured invoice data, supporting CRUD operations with optimized queries. Collaborated with frontend developers to build a responsive web application using React.js for the MRI Automation project, improving user experience and reducing UI-related issues by 30%.",
+            achievement_and_impact: "Reduced manual data entry by 60% by building an OCR + LLM-based invoice automation system. Improved OCR accuracy by 30% using OpenCV-based preprocessing techniques. Achieved 95%+ structured data accuracy by converting unstructured OCR output into JSON. Integrated Ollama (Gemma LLM) to enhance contextual data extraction by 40%.",
+            tech: ["Python", "Flask", ".NET (WPF)", "OpenCV", "RapidOCR", "Ollama(LLM)", "Rest API", "Computer Vision", "React", "TypeScript", "SQLAlchemy", "SQLite"],
+            certification: "https://drive.google.com/file/d/1hQcubcgTCOnOFcqLcw6CGCEttpmaS1Ts/view?usp=sharing",
+        },
+        {
+            id: 2,
             thumbnail: "/thumbnail/ilearnings.jpg",
             companyname: "iLearnings",
             position: "Data Science/AI/ML Intern",
+            type: "Internship",
             location: "Pune, Maharashtra",
             workmode: "Remote",
             duration: "June 2024 - August 2024",
@@ -31,10 +47,11 @@ function Internship() {
             certification: "https://drive.google.com/file/d/1hQcubcgTCOnOFcqLcw6CGCEttpmaS1Ts/view?usp=sharing",
         },
         {
-            id: 2,
+            id: 3,
             thumbnail: "/thumbnail/edunetfoundation.png",
             companyname: "Edunet Foundation",
             position: "AI Cloud Intern",
+            type: "Internship",
             location: "Bangalore, Karnataka",
             workmode: "Remote",
             duration: "June 2024 - July 2024",
@@ -187,6 +204,9 @@ function Internship() {
                                             {internship.dashboard ? (<a href={internship.dashboard} target='_blank'><FaExternalLinkAlt />Live Dashboard</a>) : (<div></div>)}
                                         </div>
                                     </div>
+                                </div>
+                                <div className={styles.employment_type}>
+                                    {internship.type}
                                 </div>
                             </div>
                         ))}
