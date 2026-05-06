@@ -38,6 +38,14 @@ function HomePage() {
         {
             skillname: "Matplotlib",
             skillicon: "./icon/matplotlib.png"
+        },
+        {
+            skillname: "Scikit-learn",
+            skillicon: "./icon/scikitlearn.png"
+        },
+        {
+            skillname: "OpenCV",
+            skillicon: "./icon/opencv.png"
         }
     ]
     const database = [
@@ -210,10 +218,11 @@ function HomePage() {
                             </div>
                             <div className={styles.about_me_content_container}>
                                 <div className={styles.about_me_content_content}>
-                                    <p>I’m Vaibhav, an aspiring Data Analyst and Software Developer with a strong foundation in Python, Power BI, SQL, and web development. I’m a recent graduate student of Bachelor’s degree in Electronics Engineering from Madhav Institute of Technology and Science, Gwalior.</p>
-                                    <p>I’m passionate about transforming raw data into meaningful insights — much like solving real-life puzzles. From building interactive dashboards to developing chatbots and automating reports, I enjoy applying data and technology to solve complex business challenges.</p>
-                                    <p>My experience includes working on real-world projects such as sales performance analysis, marketing trend visualization, and building AI-powered course enquiry chatbots. These projects have helped me sharpen both my analytical and full-stack development skills.</p>
-                                    <p>I take pride in blending logic with creativity to design solutions that are not only functional but also user-friendly.</p>
+                                    <p>I’m Vaibhav Agrawal, an Embedded AI Engineer passionate about building intelligent automation systems that combine AI, computer vision, and software development. Currently, I work on developing end-to-end invoice processing solutions using OCR, OpenCV, LLMs, and desktop applications built with .NET (WPF).</p>
+                                    <p>I graduated with a Bachelor’s degree in Electronics Engineering from Madhav Institute of Technology and Science, Gwalior.</p>
+                                    <p>I’m passionate about building intelligent systems that transform complex processes into efficient, automated solutions. From developing AI-powered invoice processing pipelines using OCR and LLMs to creating responsive web applications and dashboards, I enjoy solving real-world problems through technology.</p>
+                                    <p>My experience includes working on automation systems, computer vision-based data extraction, REST APIs, desktop applications, and modern frontend development using React.js. I particularly enjoy combining AI, software engineering, and problem-solving to create scalable and user-friendly products.</p>
+                                    <p>I take pride in blending analytical thinking with creativity to design solutions that are not only technically strong but also practical and impactful.</p>
                                     <p>Have an interesting data challenge or web idea? Let’s connect!<br />📧 Reach out to me anytime at vaibhavagrawal1902@gmail.com</p>
                                 </div>
                                 <div className={styles.about_me_image_container}>
