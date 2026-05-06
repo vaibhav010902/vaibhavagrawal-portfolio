@@ -134,7 +134,7 @@ function Navbar() {
               setOpenSidebar((prev) => !prev)
             }
           >
-              Internship
+              Experience
           </Link>
           <Link 
             to="/contact" 

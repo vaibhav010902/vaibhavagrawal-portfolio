@@ -107,22 +107,19 @@ function Internship() {
             <div className={styles.internship_page}>
                 <div className={styles.internship_page_container}>
                     <div className={styles.internship_page_container_header} ref={internshipContainerHeaderRef}>
-                        <h2 className={styles.internship_page_container_header_h2}>Internship</h2>
+                        <h2 className={styles.internship_page_container_header_h2}>Experience</h2>
                         <div>
                             <p>
-                                Internships have played a crucial role in bridging the gap between classroom learning and practical industry exposure.
-                                They’ve given me the chance to step into real-world environments, collaborate with professionals, and solve challenges that can’t be taught through textbooks alone.
+                                Internships and professional experiences have played a significant role in shaping my technical expertise and problem-solving approach. They have provided me with the opportunity to work on real-world applications, collaborate with teams, and build solutions that create practical impact beyond academic learning.
                             </p>
                             <p>
-                                Each internship I’ve undertaken has contributed uniquely to my personal and professional growth.
-                                From understanding workplace dynamics to gaining hands-on experience in tools and technologies, these opportunities have helped shape my mindset, sharpen my problem-solving abilities, and solidify my passion for building impactful solutions.
+                                Through these experiences, I’ve gained hands-on exposure to AI automation, OCR systems, desktop application development, REST APIs, and modern web technologies. Working in professional environments has strengthened my ability to design scalable solutions, optimize workflows, and adapt quickly to new technologies and challenges.   
                             </p>
                             <p>
-                                I’ve worked on diverse projects — from data analysis dashboards and machine learning models to full-stack web development and technical documentation.
-                                These experiences have not only helped me enhance my technical skill set but also improved my communication, time management, and adaptability in fast-paced environments.
+                                I’ve contributed to projects involving intelligent invoice processing systems, image preprocessing for OCR accuracy improvement, AI-powered data extraction pipelines, responsive frontend applications, and full-stack development. These experiences have not only enhanced my technical skills but also improved my communication, collaboration, and ability to work efficiently in fast-paced environments.
                             </p>
                             <p>
-                                Below, you’ll find a showcase of the internships I’ve completed so far — highlighting the organizations I collaborated with, the projects I worked on, and the key takeaways I’ve gained from each experience.
+                                Below, you’ll find a showcase of my professional experience and projects — highlighting the technologies I’ve worked with, the solutions I’ve developed, and the valuable learning gained throughout my journey.
                             </p>
                         </div>
                     </div>
